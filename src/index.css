@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #F4EFE6;
+  --color-text-primary: #333333;
+  --font-sans: "Nunito", sans-serif;
+  --font-mono: monospace;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
+
+/* Retro scrollbar */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+  border-left: 3px solid #333333;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border: 3px solid #F4EFE6;
+  border-radius: 8px;
+}
